@@ -7,8 +7,8 @@ const SmurfForm = () => {
         age: '',
         height: '',
     })
-    const newSmurf = () => {
-
+    const newSmurf = (e) => {
+        e.preventDefault()
         axios
             .post('http://localhost:3333/smurfs', smurf)
             .then(window.location.reload())

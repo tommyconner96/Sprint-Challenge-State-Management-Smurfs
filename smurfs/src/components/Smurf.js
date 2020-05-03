@@ -21,8 +21,8 @@ const Smurf = (props) => {
 
         <div>
             <p>{smurf.name}</p>
-            <p>Height: {props.smurf.height}</p>
-            <p>Age: {props.smurf.age}</p>
+            <p>Height: {smurf.height}</p>
+            <p>Age: {smurf.age}</p>
             <button onClick={() => {deleteSmurf()}}>Delete</button>
         </div>
     )
